@@ -1,0 +1,2 @@
+I’m excited to share my latest project ShopLane, an e-commerce web application where users can browse clothing and accessories, add items to their cart, and view details in a sleek and user-friendly design.
+This project allowed me to enhance my skills in front-end development, using HTML, CSS, JavaScript, Bootstrap, and working with APIs for dynamic content. I learned so much during the development process!
