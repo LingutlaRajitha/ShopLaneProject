@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+#header{
+    display:flex;
+    justify-content: space-around;
+    box-shadow: 3px 3px 1px #808080;
+    padding: 20px 0px;
+    position:fixed;
+    width:100%;
+    top:0px;
+    z-index:1;
+    background-color: white;
+
+}
+.header-icons{
+    margin:0px 6px;
+}
+body{
+    margin:0px;
+    font-family: 'Poppins', sans-serif !important;
+}
+.header-links{
+ margin:0px 5px;
+ font-weight: 500;
+ text-decoration: none;
+ color:grey;
+}
+.title-color1{
+    color: rgb(38, 189, 128);
+}
+.shoplane{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+img{
+    width:100%;
+     height: 400px;
+}
+#cartCounticon{
+    text-decoration: none;
+    color:black;
+}
+#cart-count{
+    font-size: 10px;
+    padding:4px;
+    border-radius: 10px;
+    background-color: rgb(38, 189, 128);
+    color:white;
+}
+#landing-section{
+    margin-top:70px;
+}
+/*Product section*/
+#product-section{
+    width: 90%;
+    margin: 40px auto;
+}
+#clothing-section,#acessories-section{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+}
+.product-card{
+    margin: 15px;
+    box-shadow: 0 2PX 10PX rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+.product-card:hover{
+    box-shadow: 4px 4PX 10PX rgba(0,0,0,0.3),-4px -4PX 10PX rgba(0,0,0,0.3);
+}
+#product-section > h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.product-deatils h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+.product-deatils p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.product-image{
+   width:100%;
+}
+.product-deatils{
+    padding: 10px;
+}
+
+/*footer Section*/
+#footer{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    background-color: black;
+    color:white;
+}
+.footer-links{
+    padding: 20px 0px;
+    font-size: 12px;
+}
+
+
+/*signup*/
+#headerloginIcon{
+    position: absolute;
+    list-style-type: none;
+    background-color: white;
+    padding:0px;
+    width:140px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-shadow: -2px 2px 1px rgb(170, 210, 54);
+    display:none;
+}
+#demo-pages-menu:hover + #headerloginIcon{
+    display:block;
+    box-shadow: -2px 2px 1px rgb(170, 210, 54);
+}
+#header-part2{
+    padding-right:100px;
+    font-size: 15px;
+    position: relative;
+  }
+#signup-btn{
+    border-radius: 30px;
+}
+.login-form{
+    width:320px;
+    height:300px;
+    background-color: rgba(1,1,1,0.4);
+    border:1px solid black;
+    box-shadow: 0 0 5px 2px #111;
+    border-radius: 8px;
+    position:absolute;
+    top:80%;
+    left:80%;
+    transform:translate(-80%, -0%);
+    padding:1rem;
+    color:#fff;
+    border-top: 1px solid white;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.boxStyle{
+   border-radius: 4px;
+   text-decoration: none;
+   background-color: black;
+   color:white;
+}
+input[type="text"] {
+    border: none; /* No border */
+    outline: none; /* Remove the outline on focus */
+}
+input[type="password"] {
+    border: none; /* No border */
+    outline: none; /* Remove the outline on focus */
+}
+#login-btnStyle{
+    color:white;
+    background-color: rgb(38, 189, 128);;
+    padding:2px 8px;
+}
+#login-btnStyle:hover{
+    background-color: green;
+}
+button[type="submit"]{
+    border: none; /* No border */
+    outline: none; /* Remove the outline on focus */
+}
+
+/*
+Homepage*/
+@media(max-width:600px){
+    #clothing-section,#acessories-section{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+    #footer{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .footer-links{
+        padding-left:30px;
+        font-size: 12px;
+    }
+    .header-icons{
+        margin:0px 4px;
+    }
+    .header-links{
+        margin:0px 4px;
+        font-weight: 400;
+        text-decoration: none;
+        color:grey;
+    }
+    .shoplane{
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+    
+}
+@media(min-width:601px){
+    #clothing-section,#acessories-section{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    #footer{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .footer-links{
+        padding-left:60px;
+        font-size: 12px;
+    }
+    
+}
+@media(min-width:901px){
+    #clothing-section,#acessories-section{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+    }
+    #footer{
+        display:flex;
+        justify-content: space-around;
+        width:100%;
+        background-color: black;
+        color:white;
+    }
+    .footer-links{
+        padding: 20px 0px;
+        font-size: 12px;
+    }
+}
+@media(min-width:1201px){
+    #clothing-section,#acessories-section{
+        display:grid;
+        grid-template-columns:repeat(5,1fr);
+    }
+    #footer{
+        display:flex;
+        justify-content: space-around;
+        width:100%;
+        background-color: black;
+        color:white;
+    }
+    .footer-links{
+        padding: 20px 0px;
+        font-size: 12px;
+    }
+}
+

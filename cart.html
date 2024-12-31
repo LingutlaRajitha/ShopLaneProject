@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cartPage</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtnkuO0m2_IsMkvFslks3DhdcOAg3Mm9RIg&amp;usqp=CAU" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./cart.css"/>
+    <link rel="stylesheet" href="./shopLane.css"/>
+</head>
+<body>
+    <div id="header" >
+      <a href="./index.html" class="shoplane">
+        <span class="title-color1">SHOP</span><span class="title-color2">LANE</span></a>          
+      <div>
+        <a class="header-links" href="#landing-section">Home</a>
+        <a class="header-links" href="#clothing-section">Clothing</a>
+        <a class="header-links" href="#acessories-section">Accessories</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass header-icons"></i> 
+        <i class="fa-solid fa-cart-shopping header-icons"></i>-<span id="cart-count">0</span>
+        <i class="fa-solid fa-user header-icons"></i>
+    </div>
+    </div>
+    <div id="product-section" style="margin-top:50px;">
+      <div id="cart-section">
+
+      </div>
+      <div id="amountSection">
+           <h4> Total Bill = <span id="bill"></span></h4>
+           <button id="placeOrderBtn" onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="footer-links">
+        <h2>ONLINE STORE</h2>
+        <p>MEN CLOTHING</p>
+        <P>WOMEN CLOTHING</P>
+        <P>MEN ACCESSOREIS</P>
+      </div>
+      <div class="footer-links">
+        <h2>HELPFUL LINKS</h2>
+        <p>HOME</p>
+        <P>ABOUT</P>
+        <P>CONTACT</P>
+      </div>
+      <div class="footer-links">
+        <h2>PATNERS</h2>
+        <p>ZARA</p>
+        <P>LEVIS</P>
+        <P>UCBT</P>
+      </div>
+      <div class="footer-links">
+        <h2>ADDRESS</h2>
+        <p>BUILDING 101</p>
+        <P>CENTRAL AVENUE</P>
+        <P>LA: 902722</P>
+        <P>UNITED STATES</P>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/d7fc1f9709.js" crossorigin="anonymous"></script>
+    <!--<script src="./specification.js"></script>-->
+    <script src="./cart.js"></script>
+</body>
+</html>
